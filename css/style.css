@@ -1,0 +1,1038 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  
+  body {
+    margin: 0;
+  }
+
+  
+  content {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+
+  
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  a {
+    background-color: transparent;
+  }
+
+  
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+
+  img {
+    border-style: none;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+
+    font-size: 100%;
+
+    line-height: 1.15;
+
+    margin: 0;
+
+  }
+
+  button,
+  input {
+    overflow: visible;
+  }
+
+  
+  button,
+  select {
+    text-transform: none;
+  }
+
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+
+  legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+  }
+
+  
+  progress {
+    vertical-align: baseline;
+  }
+
+  
+  textarea {
+    overflow: auto;
+  }
+
+  
+  [type="consent-checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+
+  [type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+  
+
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+
+  details {
+    display: block;
+  }
+
+  summary {
+    display: list-item;
+  }
+  
+  template {
+    display: none;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+  @font-face {
+    font-family: 'Archangelsk';
+    src: url('../fonts/Archangelsk.woff2') format('woff2'),
+      url('../fonts/Archangelsk.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoLight.woff2') format('woff2'),
+      url('../fonts/RobotoLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoRegular.woff') format('woff2'),
+      url('../fonts/RobotoRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoBold.woff2') format('woff2'),
+      url('../fonts/RobotoBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  :root {
+    --accent-color: #f8f200;
+    --dark-color: #000;
+    --light-color: #fff;
+    --text-color: #777;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  
+  .btn {
+    background-color: var(--dark-color);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--accent-color);
+    padding: 19px 50px;
+  }
+  
+  .site-list {
+    color: var(--dark-color);
+  }
+  
+  .site-list_item {
+    padding-left: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: contain;
+  }
+  
+  .site-list_item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0 36px;
+    max-width: 1352px;
+  }
+  
+  .site-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .social-anchor {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .youtube-icon {
+    background-image: url("../img/youtube.svg");
+  }
+  
+  .vk-icon {
+    background-image: url("../img/vk.svg");
+  }
+  
+  .facebook-icon {
+    background-image: url("../img/facebook.svg");
+  }
+  
+  .twitter-icon {
+    background-image: url("../img/twitter.svg");
+  }
+  
+  .twitch-icon {
+    background-image: url("../img/twitch.svg");
+  }
+  
+  .instagram-icon {
+    background-image: url("../img/instagram.svg");
+  }
+  
+  .promo-section {
+    position: relative;
+    height: 1000px;
+  }
+  
+  .promo-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .promo-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .promo-section-info {
+    position: relative;
+    z-index: 5;
+    max-width: 624px;
+    padding: 70px;
+    background-color: var(--accent-color);
+  }
+  
+  .corner-block {
+    overflow: hidden;
+    clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+  }
+  
+  .promo-section-info_title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Archangelsk', sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63px;
+    color: var(--dark-color);
+  }
+  
+  .promo-section-info_btn {
+    font-size: 24px;
+    padding: 25px 50px;
+  }
+  
+  .hero_container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .site-title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-family: 'Archangelsk', sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63px;
+    color: var(--dark-color);
+  }
+  
+  .site-descr {
+    margin: 0;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--text-color);
+  }
+  
+  .site-descr_highlighted {
+    color: #52BEDC;
+  }
+  
+  .about-game-section {
+    padding-top: 71px;
+    padding-bottom: 55px;
+  }
+  
+  .about-description {
+    margin-bottom: 60px;
+    max-width: 952px;
+  }
+  
+  .about-gallery {
+    display: flex;
+  }
+  
+  .gallery-left {
+    width: 460px;
+    margin-right: 32px;
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery-image--mini:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  
+  .gallery-image--big {
+    width: calc(100% - 460px -32px);
+  }
+  
+  .game-section {
+    padding-top: 91px;
+    padding-bottom: 135px;
+    position: relative;
+    background-color: var(--dark-color);
+  }
+  
+  .game-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-image: url("../img/pattern-top.png");
+    background-repeat: repeat-x;
+  }
+  
+  .game-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 70px;
+    background-image: url("../img/pattern-bot.png");
+    background-repeat: repeat-x;
+  }
+  
+  .game_image {
+    width: calc(100% - 36%);
+    object-fit: cover;
+  }
+  
+  .game-heading {
+    color: var(--light-color);
+    background-image: url("../img/sale.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 58px;
+    padding-bottom: 10px;
+    padding-left: 164px;
+  }
+  
+  .game-description {
+    max-width: 952px;
+    margin-bottom: 52px;
+  }
+  
+  .game-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game-entry-form {
+    padding-top: 63px;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-field {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 11px;
+    padding-left: 0;
+    color: var(--light-color);
+    border-bottom: 1px solid var(--text-color);;
+    margin-bottom: 26px;
+  }
+  
+  .form-field:nth-child(2) {
+    margin-bottom: 36px;
+  }
+  
+  .form-label {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light-color);
+    border: 1px dashed var(--text-color);
+    padding: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .form-label_file {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .form-label_text {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: 1px solid var(--light-color);
+  }
+  
+  .form-label_text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    outline: 2px solid var(--light-color);
+  }
+  
+  .form-label_file:focus + .form-label_text::after {
+    opacity: 1;
+  }
+  
+  .form-label_images {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .submit-btn {
+    margin-bottom: 16px;
+    padding: 19px 50px;
+    color: var(--dark-color);
+    background-color: var(--accent-color);
+  }
+  
+  .consent-checkbox {
+    position: relative;
+  }
+  
+  .checkbox_input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--light-color);
+  }
+  
+  .checkbox-label::before {
+    content: "";
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .checkbox-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    outline: 2px solid var(--light-color);
+  }
+  
+
+  
+  .checkbox_input:focus + .checkbox__text::after {
+    opacity: 1;
+  }
+  
+  .hp-section {
+    padding-top: 75px;
+    padding-bottom: 65px;
+    background-color: var(--accent-color);
+  }
+  
+  .hp-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hp-left-block {
+    width: calc(50% - 16px);
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hp-right-block {
+    width: calc(50% - 16px);
+  }
+  
+  .hp-heading {
+    margin-bottom: 25px;
+  }
+  
+  .hp-description {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--dark-color);
+  }
+  
+  .logos-separator {
+    margin: 0 30px;
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    background-image: url("../img/separator.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hp_logos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hp_image {
+    margin-bottom: 27px;
+  }
+  
+  .hp-features {
+    margin-bottom: 45px;
+  }
+  
+  .purchase-section {
+    position: relative;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+  }
+  
+  .buy_image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    max-width: 944px;
+    object-fit: cover;
+  }
+  
+  .purchase-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .purchase-info {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 65px;
+    padding-left: 16px;
+  }
+  
+  .purchase-title {
+    color: var(--light-color);
+  }
+  
+  .site_subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #52BEDC;
+  }
+  
+  .buy_list {
+    color: var(--light-color);
+    margin-bottom: 73px;
+  }
+  
+  .platforms-list {
+    max-width: 310px;
+    display: grid;
+    gap: 46px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .platforms-list_item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-top {
+    padding-top: 14px;
+    padding-bottom: 8px;
+  }
+  
+  .footer-link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--dark-color);
+  }
+  
+  .footer-link:not(:last-child) {
+    margin-right: 28px;
+  }
+  
+  .footer-bottom {
+    background-color: var(--dark-color);
+    padding: 13px 0;
+  }
+  
+  .copyright {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--light-color);
+  }
+  
+  @media (max-width: 1024px) {
+    .about-heading {
+      max-width: 70%;
+    }
+  
+    .about-description {
+      max-width: 85%;
+    }
+  
+    .about-gallery {
+      flex-direction: column;
+    }
+  
+    .gallery-left {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+  
+    .gallery-image--mini:not(:last-child) {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+  
+    .gallery-image--big {
+      width: 100%;
+    }
+  
+    .game-entry-form {
+      width: calc(50% - 16px);
+    }
+  
+    .game_image {
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(46.5% - 16px);
+      margin-top: 18px;
+    }
+  
+    .game-heading {
+      background-position: left top;
+      width: calc(50% - 16px);
+      padding-left: 0;
+      padding-top: 148px;
+      padding-bottom: 0;
+    }
+  
+    .game-description {
+      width: calc(50% - 16px);
+      margin-bottom: 16px;
+    }
+  
+    .hp-left-block {
+      padding-top: 42px;
+    }
+  
+    .hp_logos {
+      flex-direction: column;
+    }
+  
+    .logos-separator {
+      margin: 25px 0;
+    }
+  
+    .hp-section {
+      padding-bottom: 70px;
+    }
+  
+    .buy_image {
+      width: 32.5%;
+      max-width: 332px;
+    }
+  
+    .purchase-info {
+      width: calc(100% - 32.5%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-wrap {
+      flex-direction: column;
+    }
+  
+    .logo-link {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  
+    .hp-wrap {
+      flex-direction: column;
+    }
+  
+    .hp-left-block {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .hp-right-block {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .purchase-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buy_image {
+      position: static;
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .purchase-wrap {
+      display: block;
+    }
+  
+    .purchase-info {
+      width: 100%;
+    }
+  
+    .footer-wrap {
+      flex-direction: column;
+    }
+  
+    .footer_left,
+    .footer_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-link:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .footer-top {
+      padding: 25px 0;
+    }
+  
+    .game_image {
+      position: static;
+      margin: 0;
+      transform: none;
+      width: 100%;
+    }
+  
+    .game-wrapper {
+      flex-direction: column-reverse;
+    }
+  
+    .game-entry-form {
+      width: 100%;
+    }
+  
+    .game-heading {
+      width: 100%;
+    }
+  
+    .game-description {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+  
+    .container {
+      padding: 0 12px;
+    }
+  
+    .about-heading {
+      max-width: 100%;
+    }
+  
+    .social-anchor {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .promo-section-info {
+      max-width: none;
+      width: 100%;
+    }
+  
+    .hero_container {
+      padding: 0;
+    }
+  
+    .site-title {
+      font-size: 30px;
+    }
+  
+    .social-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  
+    .promo-section-info_title {
+      font-size: 30px;
+      padding: 30px;
+      line-height: 31px;
+    }
+  
+  
+  }
