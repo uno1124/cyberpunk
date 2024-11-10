@@ -384,7 +384,7 @@ html {
   
   .promo-section {
     position: relative;
-    height: 1000px;
+    height: 800px;
   }
   
   .promo-slider {
@@ -406,8 +406,8 @@ html {
   .promo-section-info {
     position: relative;
     z-index: 5;
-    max-width: 624px;
-    padding: 70px;
+    max-width: 524px;
+    padding: 65px;
     background-color: var(--accent-color);
   }
   
@@ -931,7 +931,9 @@ html {
       margin: 0;
       padding: 0;
     }
-  
+    .promo-section-info{
+      padding: 40px;
+    }
     .purchase-section {
       display: flex;
       flex-direction: column;
@@ -994,6 +996,7 @@ html {
     .game-description {
       width: 100%;
     }
+
   }
   
   @media (max-width: 576px) {
@@ -1014,6 +1017,7 @@ html {
     .promo-section-info {
       max-width: none;
       width: 100%;
+      padding: 30px;
     }
   
     .hero_container {
@@ -1032,6 +1036,9 @@ html {
       font-size: 30px;
       padding: 30px;
       line-height: 31px;
+    }
+    .promo-section-info_btn {
+      font-size: 14px;
     }
   
   
